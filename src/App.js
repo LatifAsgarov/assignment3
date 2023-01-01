@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;c
+export default App;
