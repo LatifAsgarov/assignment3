@@ -1,8 +1,8 @@
 import './App.css';
-import Homepage from './pages/homepage';
-import ListMovie from './pages/list-movie';
-import ContactUs from './pages/contact-us';
-import Movie from './pages/movie';
+import Homepage from './pages/homepage/homepage';
+import ListMovie from './pages/list-movie/list-movie';
+import ContactUs from './pages/contact-us/contact-us';
+import Movie from './pages/movie/movie';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
