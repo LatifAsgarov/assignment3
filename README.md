@@ -30,11 +30,14 @@ So once your feature is done please send the pull request to the whatsapp group 
 
 ## Naming conventions
 
-- Using kebab-case for File Names and class name.
+- Using kebab-case for File Names.
 example: `movie-listing.jsx`
 
 - Use PascalCase for component names
 example: `MovieCard`
+
+- Using camelCase for ClassName
+example: `movieCard`
 
 
 ## Set up project in your local computer
