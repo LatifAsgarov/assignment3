@@ -1,6 +1,8 @@
+import styles from './movie.module.css';
+
 const Movie = () => {
     return(
-        <div>Movie</div>
+        <div className={styles.movieContainer}>Movie</div>
     )
 }
 

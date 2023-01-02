@@ -1,6 +1,10 @@
+import styles from './list-movie.module.css';
+
 const ListMovie = () => {
     return(
-        <div>ListMovie</div>
+        <div className={styles.listMovieContainer}>
+            ListMovie
+        </div>
     )
 }
 

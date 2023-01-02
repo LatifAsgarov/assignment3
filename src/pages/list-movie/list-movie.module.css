@@ -1,0 +1,9 @@
+.listMovieContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #3B8EA5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

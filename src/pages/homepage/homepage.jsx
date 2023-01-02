@@ -1,6 +1,10 @@
+import styles from './homepage.module.css';
+
 const Homepage = () => {
     return(
-        <div>Homepage</div>
+        <div className={styles.homepageContainer}>
+            Homepage
+        </div>
     )
 }
 
