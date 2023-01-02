@@ -1,0 +1,21 @@
+.button {
+    width: 120px;
+    height: 40px;
+    border: solid 2px #3B8EA5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #3B8EA5;
+}
+
+.button:hover > .link {
+    color: white
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
