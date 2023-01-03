@@ -4,8 +4,9 @@ import TopMovieCard from '../../components/top-movie/top-movie-card';
 const ListMovie = () => {
     return(
         <div className={styles.listMovieContainer}>
-            <TopMovieCard />
-            ListMovie
+            <div className={styles.topMovieContainer}>
+                <TopMovieCard />
+            </div>
         </div>
     )
 }
