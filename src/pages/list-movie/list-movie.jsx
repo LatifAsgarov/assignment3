@@ -1,21 +1,28 @@
 import styles from './list-movie.module.css';
 import TopMovieCard from '../../components/top-movie/top-movie-card';
 import MovieCard from '../../components/movie-card/movie-card';
-import PaginationButton from '../../components/pagination-button/pagination-button';
-
 import { movies } from '../../api/movies-api';
 import { useEffect, useState } from 'react';
 
 const ListMovie = () => {
+    const [pageCount, setPageCount] = useState(1);
     const [movieList, setMovieList] = useState([])
+
+    const handleNextPage = (event) => {
+        setPageCount((count) => ++count);
+    };
+
+    const handlePrevPage = (event) => {
+        setPageCount((count) => --count);
+    };
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const movieArray = await movies(1);
+            const movieArray = await movies(pageCount);
             setMovieList(movieArray.data);
         }
 
-        fetchMovies();
+        fetchMovies(pageCount);
     }, []);
 
     return(
@@ -39,7 +46,10 @@ const ListMovie = () => {
                     />
                 ))}
 
-                <PaginationButton />
+                <div className={styles.paginationButtonContainer}>
+                    <button>{'<<'}</button>
+                    <button>{'>>'}</button>
+                </div>
             </div>
         </div>
     )
