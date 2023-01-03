@@ -9,7 +9,7 @@ const ListMovie = () => {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const movieArray = await movies();
+            const movieArray = await movies(1);
             setMovieList(movieArray.data);
         }
 
@@ -23,6 +23,8 @@ const ListMovie = () => {
             </div>
 
             <div className={styles.listMoviesBox}>
+                <h1>Movie List</h1>
+
                 {movieList && movieList.map((movie) => (
                     <MovieCard
                     key={movie.id}

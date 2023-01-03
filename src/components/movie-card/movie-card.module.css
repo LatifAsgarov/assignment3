@@ -3,9 +3,10 @@
     justify-content: center;
     align-items: center;
     width: 90%;
+    height: 200px;
     border-radius: 10px;
     background: #a8c0ff;
     background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
     background: linear-gradient(to right, #3f2b96, #a8c0ff);
-    margin-bottom: 2px;
+    margin: 10px;
 }

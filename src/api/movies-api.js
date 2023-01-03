@@ -1,9 +1,9 @@
 import { baseURL } from "./base-url";
 import axios from 'axios'
 
-export const movies = async () => {
+export const movies = async (pageNumber) => {
     try {
-        let movies = await axios.get(`${baseURL}/movies`);
+        let movies = await axios.get(`${baseURL}/movies?_page=${pageNumber}`);
         return movies;
     } catch (error){
         return error.message
