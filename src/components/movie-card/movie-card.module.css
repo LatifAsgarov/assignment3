@@ -31,3 +31,9 @@
 .rightContainer > img {
     width: 100px;
 }
+
+.movieCardContainer:hover {
+    cursor: pointer;
+    transition: transform .2s;
+    transform: scale(1.1);
+}
