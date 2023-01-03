@@ -1,7 +1,7 @@
 .topMovieCard {
     width: 100%;
     height: 250px;
-    background-color: rgb(60, 126, 90);
+    background-color: #3c7e5a;
     border-top-left-radius: 25px;
     display: flex;
     justify-content: space-around;

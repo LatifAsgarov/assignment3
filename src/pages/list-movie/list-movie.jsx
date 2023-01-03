@@ -28,6 +28,7 @@ const ListMovie = () => {
                 {movieList && movieList.map((movie) => (
                     <MovieCard
                     key={movie.id}
+                    title = {movie.Series_Title}
                     genre={movie.Genre}
                     rating = {movie.IMDB_Rating}
                     overview = {movie.Overview}
