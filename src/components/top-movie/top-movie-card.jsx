@@ -30,7 +30,6 @@ const TopMovieCard = () => {
             <div className={styles.rightContainer}>
                 <img src={topMovie.Poster_Link} alt={topMovie.Series_Title}/>
             </div>
-            {console.log(topMovie)}
         </div>
     )
 }
