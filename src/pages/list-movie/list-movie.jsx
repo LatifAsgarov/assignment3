@@ -15,7 +15,7 @@ const ListMovie = () => {
     const handlePrevPage = (event) => {
         if (pageCount <= 1) {
             setPageCount(1);
-        }else {
+        } else {
             setPageCount((count) => --count);
         }
     };
@@ -29,7 +29,7 @@ const ListMovie = () => {
         fetchMovies(pageCount);
     }, [pageCount]);
 
-    return(
+    return (
         <div className={styles.listMovieContainer}>
             <div className={styles.topMovieContainer}>
                 <TopMovieCard />
@@ -40,13 +40,14 @@ const ListMovie = () => {
 
                 {movieList && movieList.map((movie) => (
                     <MovieCard
-                    key={movie.id}
-                    title = {movie.Series_Title}
-                    genre={movie.Genre}
-                    rating = {movie.IMDB_Rating}
-                    overview = {movie.Overview}
-                    img_link={movie.Poster_Link}
-                    runtime = {movie.Runtime}
+                        id={movie.id}
+                        key={movie.id}
+                        title={movie.Series_Title}
+                        genre={movie.Genre}
+                        rating={movie.IMDB_Rating}
+                        overview={movie.Overview}
+                        img_link={movie.Poster_Link}
+                        runtime={movie.Runtime}
                     />
                 ))}
 
