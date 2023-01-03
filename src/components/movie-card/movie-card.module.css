@@ -1,0 +1,39 @@
+.movieCardContainer {
+    display: flex;
+    padding-left: 70px;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    background: #a8c0ff;
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    margin: 10px;
+}
+
+.leftContainer {
+    flex: 0.7;
+}
+
+.leftContainer > p {
+    color: #eeeeee;
+}
+
+.leftContainer > h2 {
+    color: #94d4b1;
+}
+
+.rightContainer {
+    flex: 0.3;
+}
+
+.rightContainer > img {
+    width: 100px;
+}
+
+.movieCardContainer:hover {
+    cursor: pointer;
+    transition: transform .2s;
+    transform: scale(1.1);
+}
