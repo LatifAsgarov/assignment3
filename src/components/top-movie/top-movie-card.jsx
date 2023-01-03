@@ -17,7 +17,13 @@ const TopMovieCard = () => {
 
     return(
         <div className={styles.topMovieCard}>
-
+            <div className={styles.leftContainer}>
+                <h2>{topMovie.Series_Title}</h2>
+            </div>
+            <div className={styles.rightContainer}>
+                <img src={topMovie.Poster_Link} alt={topMovie.Series_Title}/>
+            </div>
+            {console.log(topMovie)}
         </div>
     )
 }
