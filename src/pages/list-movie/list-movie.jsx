@@ -1,6 +1,8 @@
 import styles from './list-movie.module.css';
 import TopMovieCard from '../../components/top-movie/top-movie-card';
 import MovieCard from '../../components/movie-card/movie-card';
+import PaginationButton from '../../components/pagination-button/pagination-button';
+
 import { movies } from '../../api/movies-api';
 import { useEffect, useState } from 'react';
 
@@ -36,7 +38,8 @@ const ListMovie = () => {
                     runtime = {movie.Runtime}
                     />
                 ))}
-                
+
+                <PaginationButton />
             </div>
         </div>
     )
