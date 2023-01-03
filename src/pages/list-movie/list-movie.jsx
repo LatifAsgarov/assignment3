@@ -7,6 +7,9 @@ const ListMovie = () => {
             <div className={styles.topMovieContainer}>
                 <TopMovieCard />
             </div>
+
+            <div className={styles.listMoviesBox}>
+            </div>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 .topMovieCard {
-    width: 90%;
+    width: 100%;
     height: 250px;
-    background-color: rgb(119, 209, 147);
+    background-color: rgb(60, 126, 90);
     border-top-left-radius: 25px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .leftContainer {
@@ -23,7 +23,7 @@
 }
 
 .leftContainer > p {
-    color: #3f3f3f;
+    color: #eeeeee;
     width: 500px;
 }
 
