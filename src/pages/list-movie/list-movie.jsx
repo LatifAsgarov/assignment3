@@ -13,7 +13,11 @@ const ListMovie = () => {
     };
 
     const handlePrevPage = (event) => {
-        setPageCount((count) => --count);
+        if (pageCount <= 1) {
+            setPageCount(1);
+        }else {
+            setPageCount((count) => --count);
+        }
     };
 
     useEffect(() => {
@@ -23,7 +27,7 @@ const ListMovie = () => {
         }
 
         fetchMovies(pageCount);
-    }, []);
+    }, [pageCount]);
 
     return(
         <div className={styles.listMovieContainer}>
@@ -47,8 +51,8 @@ const ListMovie = () => {
                 ))}
 
                 <div className={styles.paginationButtonContainer}>
-                    <button>{'<<'}</button>
-                    <button>{'>>'}</button>
+                    <button onClick={handlePrevPage}>{'<<'}</button>
+                    <button onClick={handleNextPage}>{'>>'}</button>
                 </div>
             </div>
         </div>
