@@ -8,6 +8,7 @@
 }
 
 .button:hover {
+    transition: transform .2s;
     background-color: #3B8EA5;
 }
 
