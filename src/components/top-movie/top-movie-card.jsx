@@ -19,6 +19,10 @@ const TopMovieCard = () => {
         <div className={styles.topMovieCard}>
             <div className={styles.leftContainer}>
                 <h2>{topMovie.Series_Title}</h2>
+                <p>Rating: {topMovie.IMDB_Rating}/10</p>
+                <p>Genre: {topMovie.Genre}</p>
+                <p>Released Year: {topMovie.Released_Year}</p>
+                <p>{topMovie.Overview}</p>
             </div>
             <div className={styles.rightContainer}>
                 <img src={topMovie.Poster_Link} alt={topMovie.Series_Title}/>
