@@ -1,8 +1,106 @@
-.movieContainer {
+.movieContainer .backgroundImg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
     height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(20px);
+}
+
+.movieContainer .card {
+    width: 900px;
+    height: 450px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 20px 30px 3px rgb(0 0 0 / 55%);
+}
+
+.movieContainer .card .card_left {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+    background: transparent;
+    height: 450px;
+}
+
+
+.movieContainer .card .card_left img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 100%;
+}
+
+.movieContainer .card .card_right {
+    width: 60%;
+    float: left;
+    background: #000000;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    padding: 20px;
+    color: white;
+    position: relative;
+    height: 450px;
+    overflow: auto;
+}
+
+.movieContainer .card .card_right .director {
+    color: orange;
+}
+
+.movieContainer .card .card_right .details {
+    margin-top: 20px;
+}
+
+.movieContainer .card .card_right h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 28px;
+    margin: 30px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.movieContainer .sub_details span {
+    margin-right: 30px;
+}
+
+.movieContainer .ratings {
+    margin-top: 5px;
+}
+
+.movieContainer .ratings span {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.movieContainer .ratings .checked span {
+    color: orange !important;
+}
+
+.movieContainer .overview {
+    margin-top: 15px;
+}
+
+.movieContainer .movieStars {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.movieContainer .card_right .certificate {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: orange;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: bold;
 }
