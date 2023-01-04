@@ -1,8 +1,128 @@
-.homepageContainer {
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* general info */
+.header img{
+    width: 250px;
+    position: relative;
+    bottom: 8px;
+    /* left: 150px; */
+    right: -1025px;
+    z-index: -1;
+}
+
+.homepageContainer h2, h4, h6{
     width: 100%;
+    color: #2B3467;
+    text-align: center;
+}
+
+.homepageContainer h2{
+    font-size: 3.5em;
+}
+
+.homepageContainer h4{
+    font-size: 2em;
+}
+
+.homepageContainer h6{
+    font-size: 1.5em;
+}
+
+
+/* Team Section */
+
+.homepageContainer .row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.homepageContainer .column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+}
+
+.homepageContainer h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #2B3467;
+}
+
+.homepageContainer .card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 3.5em 1em;
+    border-radius: 0.6wm;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 35px;
+}
+
+.homepageContainer .card .profile{
+    width: 8em;
+    height: 8em;
+    background-color: #FF8787;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.homepageContainer .card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.homepageContainer .card h3{
+    font-weight: 500;
+}
+
+.homepageContainer .card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 0.2em 0;
+    letter-spacing: 1px;
+}
+
+.homepageContainer .icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.homepageContainer .social-icon{
+    color: #2B3467;
+    text-decoration: none;
+}
+
+.homepageContainer .card a{
+    text-decoration: none;
+    color: #2B3467;
+    font-size: 1.2em;
+}
+
+.homepageContainer .card:hover{
+    background-color: #A0C3D2;
+    color: #2B3467;
+    transform: translateY(-15px);
+}
+
+/* responsiiveness */
+
+@media screen  and (max-width: 950px){
+    .homepageContainer section{
+        padding: 1em;
+    }
+
+    .homepageContainer .card{
+        padding: 5em 1em;
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .homepageContainer section{
+        padding: 1em 7em;
+    }
 }
