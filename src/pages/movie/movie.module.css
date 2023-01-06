@@ -104,3 +104,15 @@
     border-radius: 3px;
     font-weight: bold;
 }
+
+.arrowButtonHolder {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.arrowButtonHolder > button {
+    width: 150px;
+}
