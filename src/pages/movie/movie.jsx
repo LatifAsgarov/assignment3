@@ -29,10 +29,12 @@ const Movie = () => {
                 <button>{"<<"}</button>
             </div>
 
-            <div className={styles.card}>
+            <div className={styles.wrapContainer}>
+            
                 <div className={styles.card_left}>
                     <img src={movieData.Poster_Link} alt="poster" />
                 </div>
+
                 <div className={styles.card_right}>
                     {overview}
                     <h1>{movieData.Series_Title}</h1>
