@@ -25,11 +25,16 @@ const Movie = () => {
 
     return (
         <div className={styles.movieContainer}>
-            <img className={styles.backgroundImg} src={movieData.Poster_Link} alt="poster" />
-            <div className={styles.card}>
+            <div className={styles.arrowButtonHolder}>
+                <a href="/list-movies"><button>{"<<"}</button></a>
+            </div>
+
+            <div className={styles.wrapContainer}>
+            
                 <div className={styles.card_left}>
                     <img src={movieData.Poster_Link} alt="poster" />
                 </div>
+
                 <div className={styles.card_right}>
                     {overview}
                     <h1>{movieData.Series_Title}</h1>
