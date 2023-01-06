@@ -1,14 +1,18 @@
 import styles from './homepage.module.css';
 import movieImage from '../../assets/movie.png'
 import memberImage from '../../assets/member.png'
+
 const Homepage = () => {
     return (
         <div className={styles.homepageContainer}>
             <div className={styles.header}>
-                <h2>Unlimited Movie, TVs Show, &amp; More</h2>
-                <h4>Watch everywhere.<br />Stream unlimited movies and TV shows <br /> on your phone, tablet, laptop, and TV without paying more.</h4>
-                <h6>Ready to watch? Check out most popular movies this week!</h6>
-                <img src={movieImage} alt="movie.png" />
+                <div className={styles.partOne}>
+                    <h2>Unlimited Movie, TVs Show, &amp; More</h2>
+                    <h4>Watch everywhere.<br />Stream unlimited movies and TV shows <br /> on your phone, tablet, laptop, and TV without paying more.</h4>
+                    <h6>Ready to watch? Check out most popular movies this week!</h6>
+                </div>
+                
+                <img className={styles.imagePopcorn} src={movieImage} alt="movie.png" />
             </div>
             <section>
                 <div className={styles.row}>
