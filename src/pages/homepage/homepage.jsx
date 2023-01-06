@@ -61,8 +61,8 @@ const Homepage = () => {
                             </div>
                             <h3>Latif Asgarov</h3>
                             <p>Developer</p>
-                            <p><a href="#" target="_blank">Personal Webpage</a></p>
-                            <p><a href="https://github.com/LatifAsgarov/assignment2" target="_blank" rel="noreferrer">Weather App</a></p>
+                            <p><a href="https://homework-amber-nu.vercel.app/" target="_blank">Personal Webpage</a></p>
+                            <p><a href="https://assignment2-flax.vercel.app/" target="_blank" rel="noreferrer">Weather App</a></p>
                             <div className={styles.icons}>
                                 <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-linkedin`} /></a>
                                 <a href="https://github.com/LatifAsgarov" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-github`} /></a>
