@@ -45,11 +45,11 @@ const Homepage = () => {
                             </div>
                             <h3>Nargiz Bayramova</h3>
                             <p>Developer</p>
-                            <p><a href="https://nrrggz.github.io/nbayramova.github.io/" target="_blank">Personal Webpage</a></p>
-                            <p><a href="https://nrrggz.github.io/weather-app/" target="_blank">Weather Teller App</a></p>
+                            <p><a href="https://nrrggz.github.io/nbayramova.github.io/" target="_blank" rel="noreferrer">Personal Webpage</a></p>
+                            <p><a href="https://nrrggz.github.io/weather-app/" target="_blank" rel="noreferrer">Weather Teller App</a></p>
                             <div className={styles.icons}>
-                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-linkedin`} /></a>
-                                <a href="https://github.com/nrrggz" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-github`} /></a>
+                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-linkedin`} /></a>
+                                <a href="https://github.com/nrrggz" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-github`} /></a>
                             </div>
                         </div>
                     </div>
@@ -62,9 +62,9 @@ const Homepage = () => {
                             <h3>Latif Asgarov</h3>
                             <p>Developer</p>
                             <p><a href="#" target="_blank">Personal Webpage</a></p>
-                            <p><a href="https://github.com/LatifAsgarov/assignment2" target="_blank">Weather App</a></p>
+                            <p><a href="https://github.com/LatifAsgarov/assignment2" target="_blank" rel="noreferrer">Weather App</a></p>
                             <div className={styles.icons}>
-                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-linkedin`} /></a>
+                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-linkedin`} /></a>
                                 <a href="https://github.com/LatifAsgarov" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-github`} /></a>
                             </div>
                         </div>
