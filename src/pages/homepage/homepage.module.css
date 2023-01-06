@@ -9,6 +9,10 @@
     z-index: -1;
 }
 
+.homepageContainer {
+    padding-top: 10vh;
+}
+
 .homepageContainer h2, h4, h6{
     width: 100%;
     color: #2B3467;
