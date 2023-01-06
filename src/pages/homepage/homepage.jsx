@@ -1,6 +1,8 @@
 import styles from './homepage.module.css';
 import movieImage from '../../assets/movie.png'
-import memberImage from '../../assets/member.png'
+import jigme from '../../assets/jigme.jpeg'
+import latif from '../../assets/latif.jpeg'
+import nargiz from '../../assets/nargiz.jpeg'
 
 const Homepage = () => {
     return (
@@ -23,15 +25,15 @@ const Homepage = () => {
                     <div className={styles.column}>
                         <div className={styles.card}>
                             <div className={styles.profile}>
-                                <img src={memberImage} alt="team member" />
+                                <img src={jigme} alt="team member" />
                             </div>
                             <h3>Jigme Tashi Namgyal</h3>
                             <p>Developer</p>
-                            <p><a href="#" target="_blank">Yugen</a></p>
-                            <p><a href="#" target="_blank">Cert-tainty</a></p>
+                            <p><a href="https://jigmetnamgyal.github.io/" target="_blank" rel="noreferrer">Personal website</a></p>
+                            <p><a href="https://jigmetnamgyal.github.io/weather-app.html" target="_blank" rel="noreferrer">Weather App</a></p>
                             <div className={styles.icons}>
-                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-linkedin`} /></a>
-                                <a href="https://github.com/jigmetnamgyal" target="_blank" className={styles['social-icon']}><i className={`fa fa-brands fa-github`} /></a>
+                                <a href="https://www.linkedin.com/login" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-linkedin`} /></a>
+                                <a href="https://github.com/jigmetnamgyal" target="_blank" className={styles['social-icon']} rel="noreferrer"><i className={`fa fa-brands fa-github`} /></a>
                             </div>
                         </div>
                     </div>
@@ -39,7 +41,7 @@ const Homepage = () => {
                     <div className={styles.column}>
                         <div className={styles.card}>
                             <div className={styles.profile}>
-                                <img src={memberImage} alt="team member" />
+                                <img src={nargiz} alt="team member" />
                             </div>
                             <h3>Nargiz Bayramova</h3>
                             <p>Developer</p>
@@ -55,7 +57,7 @@ const Homepage = () => {
                     <div className={styles.column}>
                         <div className={styles.card}>
                             <div className={styles.profile}>
-                                <img src={memberImage} alt="team member" />
+                                <img src={latif} alt="team member" />
                             </div>
                             <h3>Latif Asgarov</h3>
                             <p>Developer</p>
