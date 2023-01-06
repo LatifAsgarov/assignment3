@@ -7,6 +7,7 @@ const ContactUs = () => {
   const [showError, setShowError] = useState(false)
   const [subject, setSubject] = useState('')
   const [email, setEmail] = useState('')
+  const [fullName, setFullName] = useState('')
   const [messageContent, setMessageContent] = useState('')
 
   const openPopup = () => {
@@ -19,16 +20,22 @@ const ContactUs = () => {
   const handleSubjectChange = (event) => {
     setSubject(event.target.value);
   }
+
+  const handleFullNameChange = (event) => {
+    setFullName(event.target.value);
+  }
+
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   }
+
   const handleMessageContentChange = (event) => {
     setMessageContent(event.target.value);
   }
 
   const sendMessage = async (e) => {
     e.preventDefault()
-    if (!subject || !email || !messageContent) {
+    if (!subject || !email || !messageContent || !fullName) {
       setShowError(true)
       return
     }
@@ -37,10 +44,12 @@ const ContactUs = () => {
     const data = {
       subject,
       email,
-      messageContent
+      messageContent,
+      fullName
     }
+
     const response = await messages(data)
-    if(response.status == 201) {
+    if(response.status === 201) {
       openPopup()
       setSubject('')
       setEmail('')
@@ -54,6 +63,7 @@ const ContactUs = () => {
         <div className={styles.formContainer}>
           <h3>GET IN TOUCH</h3>
           <input type="text" id="subject" placeholder="Subject" autoComplete="off" value={subject} onChange={handleSubjectChange} />
+          <input type="text" id="full_name" placeholder="FullName" autoComplete="off" value={fullName} onChange={handleFullNameChange} />
           <input type="email" id="email" placeholder="Email" autoComplete="off" value={email} onChange={handleEmailChange} />
           <textarea id="message" rows={5} placeholder="How can we help you?" autoComplete="off" value={messageContent} onChange={handleMessageContentChange} />
           {(showError) ? <p className={styles.errorBox}>Please fill all the blanks</p> : null}
