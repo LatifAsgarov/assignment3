@@ -26,7 +26,7 @@ const Movie = () => {
     return (
         <div className={styles.movieContainer}>
             <div className={styles.arrowButtonHolder}>
-                <button>{"<<"}</button>
+                <a href="/list-movies"><button>{"<<"}</button></a>
             </div>
 
             <div className={styles.wrapContainer}>
