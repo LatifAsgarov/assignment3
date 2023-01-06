@@ -51,12 +51,15 @@ const ContactUs = () => {
   return (
     <div className={styles.container}>
       <form >
-        <h3>GET IN TOUCH</h3>
-        <input type="text" id="subject" placeholder="Subject" autoComplete="off" value={subject} onChange={handleSubjectChange} />
-        <input type="email" id="email" placeholder="Email" autoComplete="off" value={email} onChange={handleEmailChange} />
-        <textarea id="message" rows={5} placeholder="How can we help you?" autoComplete="off" value={messageContent} onChange={handleMessageContentChange} />
-        {(showError) ? <p className={styles.errorBox}>Please fill all the blanks</p> : null}
-        <button onClick={sendMessage}>Send</button>
+        <div className={styles.formContainer}>
+          <h3>GET IN TOUCH</h3>
+          <input type="text" id="subject" placeholder="Subject" autoComplete="off" value={subject} onChange={handleSubjectChange} />
+          <input type="email" id="email" placeholder="Email" autoComplete="off" value={email} onChange={handleEmailChange} />
+          <textarea id="message" rows={5} placeholder="How can we help you?" autoComplete="off" value={messageContent} onChange={handleMessageContentChange} />
+          {(showError) ? <p className={styles.errorBox}>Please fill all the blanks</p> : null}
+          <button onClick={sendMessage}>Send</button>
+        </div>
+
         {/* content popup */}
         <div className={`${styles.popup}  ${popupIsOpen ? styles['open-popup'] : null}`} id="popup">
           <img src="operator.png" alt="" />
