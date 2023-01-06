@@ -1,6 +1,7 @@
 import styles from './homepage.module.css';
 import movieImage from '../../assets/movie.png'
 import memberImage from '../../assets/member.png'
+
 const Homepage = () => {
     return (
         <div className={styles.homepageContainer}>
