@@ -49,8 +49,8 @@
 
 .homepageContainer .column{
         flex: 0 0 33.33%;
-        max-width: 33.33%;
         padding: 0 1em;
+        flex-wrap: wrap;
 }
 
 .homepageContainer h1{
@@ -65,7 +65,6 @@
     padding: 3.5em 1em;
     border-radius: 0.6wm;
     color: black;
-    cursor: pointer;
     transition: 0.3s;
     border-radius: 35px;
 }

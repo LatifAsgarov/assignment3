@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const movies = async (pageNumber) => {
     try {
-        let movies = await axios.get(`${baseURL}/movies?_page=${pageNumber}&_limit=5`);
+        let movies = await axios.get(`${baseURL}/movies?_page=${pageNumber}&_limit=7`);
         return movies;
     } catch (error){
         return error.message
