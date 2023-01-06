@@ -54,6 +54,7 @@ const ContactUs = () => {
       setSubject('')
       setEmail('')
       setMessageContent('')
+      setFullName('')
     }
   }
 
@@ -63,7 +64,7 @@ const ContactUs = () => {
         <div className={styles.formContainer}>
           <h3>GET IN TOUCH</h3>
           <input type="text" id="subject" placeholder="Subject" autoComplete="off" value={subject} onChange={handleSubjectChange} />
-          <input type="text" id="full_name" placeholder="FullName" autoComplete="off" value={fullName} onChange={handleFullNameChange} />
+          <input type="text" id="full_name" placeholder="Full Name" autoComplete="off" value={fullName} onChange={handleFullNameChange} />
           <input type="email" id="email" placeholder="Email" autoComplete="off" value={email} onChange={handleEmailChange} />
           <textarea id="message" rows={5} placeholder="How can we help you?" autoComplete="off" value={messageContent} onChange={handleMessageContentChange} />
           {(showError) ? <p className={styles.errorBox}>Please fill all the blanks</p> : null}
