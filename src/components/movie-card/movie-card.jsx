@@ -6,7 +6,7 @@ const MovieCard = (props) => {
     return (
         <Link to={`/movies/${props.id}`} className={styles.movieCardContainer}>
             <div className={styles.leftContainer}>
-                <h2>{props.title}</h2>
+                <h3>{props.title}</h3>
                 <br />
                 <p>Rating: {props.rating}/10</p>
                 <p>Genre: {props.genre}</p>

@@ -31,32 +31,38 @@ const ListMovie = () => {
 
     return (
         <div className={styles.listMovieContainer}>
+            <div className={styles.titleContainer}>
+                <h1>Movie List</h1>
+            </div>
+            
+
             <div className={styles.topMovieContainer}>
                 <TopMovieCard />
             </div>
 
-            <div className={styles.listMoviesBox}>
-                <h1>Movie List</h1>
-
-                {/* remove the first movie since it is rendered in different component */}
-                {movieList && movieList.slice(1).map((movie) => (
-                    <MovieCard
-                        id={movie.id}
-                        key={movie.id}
-                        title={movie.Series_Title}
-                        genre={movie.Genre}
-                        rating={movie.IMDB_Rating}
-                        overview={movie.Overview}
-                        img_link={movie.Poster_Link}
-                        runtime={movie.Runtime}
-                    />
-                ))}
+            <div className={styles.listContainer}>
+                <div className={styles.listMoviesBox}>
+    {/* remove the first movie since it is rendered in different component */}
+                    {movieList && movieList.slice(1).map((movie) => (
+                        <MovieCard
+                            id={movie.id}
+                            key={movie.id}
+                            title={movie.Series_Title}
+                            genre={movie.Genre}
+                            rating={movie.IMDB_Rating}
+                            overview={movie.Overview}
+                            img_link={movie.Poster_Link}
+                            runtime={movie.Runtime}
+                        />
+                    ))}
+                </div>
 
                 <div className={styles.paginationButtonContainer}>
-                    <button onClick={handlePrevPage}>{'<<'}</button>
-                    <button onClick={handleNextPage}>{'>>'}</button>
+                        <button onClick={handlePrevPage}>{'<<'}</button>
+                        <button onClick={handleNextPage}>{'>>'}</button>
                 </div>
             </div>
+            
         </div>
     )
 }

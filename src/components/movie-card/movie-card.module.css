@@ -3,14 +3,15 @@
     padding-left: 70px;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 40%;
     height: 200px;
     border-radius: 10px;
-    background: #a8c0ff;
-    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
-    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 10px;
     text-decoration: none;
+
 }
 
 .leftContainer {
@@ -18,11 +19,12 @@
 }
 
 .leftContainer > p {
-    color: #eeeeee;
+    color: black;
+    font-size: 12px;
 }
 
-.leftContainer > h2 {
-    color: #94d4b1;
+.leftContainer > h3 {
+    color: black;
 }
 
 .rightContainer {
