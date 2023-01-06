@@ -38,7 +38,8 @@ const ListMovie = () => {
             <div className={styles.listMoviesBox}>
                 <h1>Movie List</h1>
 
-                {movieList && movieList.map((movie) => (
+                {/* remove the first movie since it is rendered in different component */}
+                {movieList && movieList.slice(1).map((movie) => (
                     <MovieCard
                         id={movie.id}
                         key={movie.id}
